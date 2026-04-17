@@ -1,0 +1,6 @@
+certifi
+customtkinter
+numpy
+Pillow
+pyinstaller
+requests

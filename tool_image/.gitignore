@@ -1,0 +1,75 @@
+# ========================
+# Build / Packaging
+# ========================
+dist/
+build/
+*.egg-info/
+*.whl
+*.tar.gz
+
+# ========================
+# Python Bytecode
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ========================
+# Environments
+# ========================
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ========================
+# Windows
+# ========================
+Thumbs.db
+Desktop.ini
+
+# ========================
+# Local configuration
+# ========================
+.env.*
+*.env
+settings.json
+config.json
+clipart_settings.json
+credentials*.json
+secrets*.json
+token*.json
+*.key
+*.pem
+*.p12
+*.pfx
+
+# ========================
+# IDE / Editor
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ========================
+# Logs
+# ========================
+*.log
+
+# ========================
+# MacOS
+# ========================
+.DS_Store
+
+# ========================
+# Project specific
+# ========================
+debug/
+output/
+Logo.ico
+*_generated.png
+*_ai.png
