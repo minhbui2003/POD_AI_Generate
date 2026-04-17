@@ -1,8 +1,8 @@
 {
-  "version": "1.0.3",
-  "release_notes": "Version 1.0.3",
+  "version": "1.0.0",
+  "release_notes": "Version 1.0.0",
   "windows": {
-    "download_url": "https://github.com/minhbui2003/POD_AI_Generate/releases/download/v1.0.3/POD_Generate_IMG.exe",
-    "sha256": "939fe271309b44d25ee4694c52bad8e8b5fc5604e2974ed3f38c2a9bda6e3833"
+    "download_url": "https://github.com/minhbui2003/POD_AI_Generate/releases/download/v1.0.0/POD_Generate_IMG.exe",
+    "sha256": "34a5a142132e5f81547971bb35a2694aefc6e563645d3189a531b8dc60c510a6"
   }
 }
