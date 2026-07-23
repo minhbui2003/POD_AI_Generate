@@ -1,6 +1,6 @@
 certifi
-customtkinter
 numpy
 Pillow
 pyinstaller
+PySide6
 requests

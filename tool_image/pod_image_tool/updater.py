@@ -11,7 +11,10 @@ import time
 import urllib.error
 import urllib.request
 
-import config
+try:
+    from . import config
+except ImportError:
+    import config
 
 
 def _https_context():

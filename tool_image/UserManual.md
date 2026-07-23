@@ -7,7 +7,7 @@ Phần mềm **Tools AI Studio** là giải pháp tối thượng dành riêng c
 ## Phần 1: Hướng Dẫn Dụng (User Manual)
 
 ### 1. Chuẩn Bị
-- Chạy trực tiếp `python clipart_tool.py`.
+- Chạy trực tiếp `python main.py`.
 - **API Key:** Dán mã khóa Google Gemini API Key của bạn vào ô đầu tiên. (Có thể lấy miễn phí tại [Google AI Studio](https://aistudio.google.com/)).
 
 ### 2. Các Bước Vận Hành Cơ Bản

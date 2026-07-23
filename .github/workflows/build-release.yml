@@ -37,18 +37,19 @@ jobs:
         shell: pwsh
         run: |
           $version = "${env:GITHUB_REF_NAME}".TrimStart("v")
-          $content = Get-Content config.py -Raw
+          $configPath = "pod_image_tool/config.py"
+          $content = Get-Content $configPath -Raw
           $content = $content -replace 'CURRENT_VERSION = ".*"', "CURRENT_VERSION = `"$version`""
-          Set-Content config.py $content -Encoding UTF8
+          Set-Content $configPath $content -Encoding UTF8
           Write-Host "Build version: $version"
 
       - name: Create Windows icon
         shell: pwsh
         run: |
-          python -c "from PIL import Image; img=Image.open('Logo.png').convert('RGBA'); img.save('Logo.ico', sizes=[(16,16),(32,32),(48,48),(64,64),(128,128),(256,256)])"
+          python -c "from PIL import Image; img=Image.open('pod_image_tool/assets/Logo.png').convert('RGBA'); img.save('pod_image_tool/assets/Logo.ico', sizes=[(16,16),(32,32),(48,48),(64,64),(128,128),(256,256)])"
 
       - name: Build Windows exe
-        run: pyinstaller clipart_tool.spec --noconfirm --clean
+        run: pyinstaller pod_generate_img.spec --noconfirm --clean
 
       - name: Upload Windows artifact
         uses: actions/upload-artifact@v4

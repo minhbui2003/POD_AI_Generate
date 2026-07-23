@@ -6,20 +6,18 @@ from PyInstaller.utils.hooks import collect_all
 datas = []
 binaries = []
 hiddenimports = []
-tmp_ret = collect_all('customtkinter')
-datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
 tmp_ret = collect_all('certifi')
 datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
 
-datas += [('Logo.png', '.')]
-if os.path.exists('Logo.ico'):
-    datas += [('Logo.ico', '.')]
+datas += [('pod_image_tool/assets/Logo.png', 'pod_image_tool/assets')]
+if os.path.exists('pod_image_tool/assets/Logo.ico'):
+    datas += [('pod_image_tool/assets/Logo.ico', 'pod_image_tool/assets')]
 
-icon_path = 'Logo.ico' if os.path.exists('Logo.ico') else None
+icon_path = 'pod_image_tool/assets/Logo.ico' if os.path.exists('pod_image_tool/assets/Logo.ico') else None
 
 
 a = Analysis(
-    ['clipart_tool.py'],
+    ['main.py'],
     pathex=[],
     binaries=binaries,
     datas=datas,
